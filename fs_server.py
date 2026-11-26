@@ -43,8 +43,8 @@ mcp = FastMCP()
 # Determine the operating system
 SYSTEM = platform.system()  # 'Windows', 'Darwin' (macOS), or 'Linux'
 
-# Get the project root directory (parent of src directory)
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+# Project root directory (the directory containing this file)
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Set up default directories within the project
 DEFAULT_BASE_DIR = os.path.join(PROJECT_ROOT, "data")
